@@ -1,0 +1,6 @@
+.env
+.env.local
+.env.dev
+.lib
+node_modules
+prisma
