@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Roboto, Inter, Geist } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/core/Providers";
+import { Toaster } from "@/components/ui/sonner";
 
 const montFont = Montserrat({
   subsets: ["latin"],
@@ -37,9 +38,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montFont.variable} ${geistFont.variable} ${interFont.variable} ${robotoFont.variable} antialiased`}
+        className={`${montFont.variable} ${geistFont.variable} ${interFont.variable} ${robotoFont.variable} antialiased bg-black w-full`}
       >
         <Providers>{children}</Providers>
+        <Toaster />
       </body>
     </html>
   );

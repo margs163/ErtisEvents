@@ -1,9 +1,12 @@
+import Footer from "@/components/Footer";
+import Categories from "@/components/home/Categories";
+import EventsCarousel from "@/components/home/EventsCarousel";
+import Hero from "@/components/home/Hero";
+import Home from "@/components/home/Home";
+import NewsLine from "@/components/home/NewsLine";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <h1 className="text-4xl font-bold text-neutral-800">New Project</h1>
-    </div>
-  );
+export default function Page() {
+  return <Home />;
 }

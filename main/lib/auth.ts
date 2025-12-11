@@ -14,4 +14,23 @@ export const auth = betterAuth({
     //   clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
     // },
   },
+  user: {
+    additionalFields: {
+      age: {
+        type: "number",
+        input: true,
+        required: true,
+      },
+      gender: {
+        type: "string",
+        input: true,
+        required: true,
+      },
+      interests: {
+        type: "string[]",
+        input: true,
+        required: true,
+      },
+    },
+  },
 });
