@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import concert from "@/assets/images/concert.png";
 import badge from "@/assets/images/badge.svg";
@@ -12,18 +13,18 @@ export default function Hero() {
     <section className="space-y-4">
       <div className="space-y-0 px-4 lg:px-40 relative z-20">
         <div className="flex gap-8 lg:gap-20 items-start lg:items-center mb-0">
-          <h1 className=" text-[3.5rem] lg:text-[9rem] leading-none font-extrabold text-white scale-x-109 lg:scale-x-110">
-            THE
+          <h1 className=" text-[3.2rem] lg:text-[8rem] leading-none font-extrabold text-white scale-x-109 lg:scale-x-110">
+            ВСЕ
           </h1>
           <h3 className="text-[0.80rem] lg:text-3xl lg:max-w-160 leading-[1.41] font-medium text-neutral-300">
-            Ertis Events is for crazy people who create something from nothing
+            Керемет Мейрамдар Бізде, Себебі Ерке Ертістің Жағасында
           </h3>
         </div>
-        <h1 className="text-[3.5rem] lg:text-[9rem] lg:text-9xl leading-[0.9] lg:leading-[1] font-extrabold text-blue-500 scale-x-109 lg:scale-x-112 pl-2 lg:pl-8">
-          CREATOR
+        <h1 className="text-[2.7rem] lg:text-[8rem] lg:text-9xl leading-[0.9] lg:leading-[1] font-extrabold text-blue-500 scale-x-109 lg:scale-x-112 pl-2 lg:pl-8">
+          КРЕАТИВНЫЕ
         </h1>
-        <h1 className="text-[3.5rem] lg:text-[9rem] lg:text-9xl leading-[0.9] font-extrabold text-white scale-x-105 lg:scale-x-110 lg:pl-6">
-          GATHERING
+        <h1 className="text-[2.65rem] lg:text-[8rem] lg:text-9xl leading-[1] font-extrabold text-white scale-x-105 lg:scale-x-110 lg:pl-6">
+          МЕРОПРИЯТИЯ
         </h1>
       </div>
       <div className="bg-blue-500 h-40 lg:h-100 relative -bottom-14 w-full">
@@ -38,8 +39,8 @@ export default function Hero() {
             alt="badge"
             className="size-26 lg:size-80 fill-blue-400 filter-[invert(1)_hue-rotate(360deg)_saturate(2)] shadow-lg lg:shadow-none drop-shadow-lg drop-shadow-gray-400"
           />
-          <h2 className="text-[10px] lg:text-[1.8rem] lg:max-w-50 leading-none top-10 lg:top-32 lg:right-14 right-0 text-center font-extrabold text-white absolute">
-            BECOME AN ORGANIZER
+          <h2 className="text-[14px] lg:text-[2rem] max-w-20 lg:max-w-50 leading-none top-10 lg:top-32 lg:right-14 right-2.5 text-center font-extrabold text-white absolute">
+            СТАТЬ ХОСТОМ
           </h2>
         </div>
         <div className="flex justify-end gap-2 relative -top-20 lg:-top-24 px-6 lg:px-40">
@@ -48,14 +49,14 @@ export default function Hero() {
             onClick={() => setSignUpForm(true)}
             className="px-6 py-2.5 lg:px-12 lg:py-5 lg:rounded-3xl bg-black hover:bg-neutral-800 transition-colors active:bg-neutral-800 text-white rounded-2xl text-sm lg:text-xl font-semibold lg:font-bold"
           >
-            Start Now
+            Начать Сейчас
           </Link>
           <Link
             href={"#"}
             className="px-6 py-2.5 lg:px-12 lg:py-5 lg:rounded-3xl bg-white text-neutral-800 hover:bg-neutral-100 active:bg-neutral-100 transition-colors text-sm lg:text-xl font-semibold lg:font-bold rounded-2xl"
             onClick={() => setSignUpForm(true)}
           >
-            Learn More
+            Узнать Больше
           </Link>
         </div>
       </div>

@@ -6,77 +6,77 @@ export default function NewsLine() {
       <div className="flex items-center gap-4 ticker-text w-full">
         <h2 className="flex items-center uppercase font-bold text-xl text-blue-500 text-nowrap gap-2">
           <MoveUpRight className="shrink-0 size-3.5 box-content p-1 bg-blue-500 rounded-full text-neutral-900" />{" "}
-          Watch Events
+          СМОТРЕТЬ СОБЫТИЯ
         </h2>
         <h2 className="flex items-center uppercase font-bold text-xl text-blue-500 text-nowrap gap-2">
           <MoveUpRight className="shrink-0 size-3.5 p-1 box-content bg-blue-500 rounded-full text-neutral-900" />{" "}
-          Watch Events
+          СМОТРЕТЬ СОБЫТИЯ
         </h2>
         <h2 className="flex items-center uppercase font-bold text-xl text-blue-500 text-nowrap gap-2">
           <MoveUpRight className="shrink-0 size-3.5 p-1 box-content bg-blue-500 rounded-full text-neutral-900" />{" "}
-          Watch Events
+          СМОТРЕТЬ СОБЫТИЯ
         </h2>
         <h2 className="flex items-center uppercase font-bold text-xl text-blue-500 text-nowrap gap-2">
           <MoveUpRight className="shrink-0 size-3.5 box-content p-1 bg-blue-500 rounded-full text-neutral-900" />{" "}
-          Watch Events
+          СМОТРЕТЬ СОБЫТИЯ
         </h2>
         <h2 className="flex items-center uppercase font-bold text-xl text-blue-500 text-nowrap gap-2">
           <MoveUpRight className="shrink-0 size-3.5 p-1 box-content bg-blue-500 rounded-full text-neutral-900" />{" "}
-          Watch Events
+          СМОТРЕТЬ СОБЫТИЯ
         </h2>
         <h2 className="flex items-center uppercase font-bold text-xl text-blue-500 text-nowrap gap-2">
           <MoveUpRight className="shrink-0 size-3.5 p-1 box-content bg-blue-500 rounded-full text-neutral-900" />{" "}
-          Watch Events
+          СМОТРЕТЬ СОБЫТИЯ
         </h2>
         <h2 className="flex items-center uppercase font-bold text-xl text-blue-500 text-nowrap gap-2">
           <MoveUpRight className="shrink-0 size-3.5 box-content p-1 bg-blue-500 rounded-full text-neutral-900" />{" "}
-          Watch Events
+          СМОТРЕТЬ СОБЫТИЯ
         </h2>
         <h2 className="flex items-center uppercase font-bold text-xl text-blue-500 text-nowrap gap-2">
           <MoveUpRight className="shrink-0 size-3.5 p-1 box-content bg-blue-500 rounded-full text-neutral-900" />{" "}
-          Watch Events
+          СМОТРЕТЬ СОБЫТИЯ
         </h2>
         <h2 className="flex items-center uppercase font-bold text-xl text-blue-500 text-nowrap gap-2">
           <MoveUpRight className="shrink-0 size-3.5 p-1 box-content bg-blue-500 rounded-full text-neutral-900" />{" "}
-          Watch Events
+          СМОТРЕТЬ СОБЫТИЯ
         </h2>
       </div>
       <div className="flex items-center gap-4 ticker-text w-full">
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • Sport events
+          • Спортивные События
         </h2>
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • Music events
+          • Музыкальные События
         </h2>
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • Art events
+          • Искуственные События
         </h2>
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • City events
+          • Городские События
         </h2>
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • Sport events
+          • Спортивные События
         </h2>
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • Music events
+          • Музыкальные События
         </h2>
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • Art events
+          • Искуственные События
         </h2>
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • City events
+          • Городские События
         </h2>
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • Sport events
+          • Спортивные События
         </h2>
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • Music events
+          • Музыкальные События
         </h2>
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • Art events
+          • Искуственные События
         </h2>
         <h2 className="flex items-center uppercase font-semibold text-xl text-white text-nowrap gap-2">
-          • City events
+          • Городские События
         </h2>
       </div>
     </section>

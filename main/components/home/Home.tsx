@@ -1,3 +1,5 @@
+import SignInDialog from "../auth/SignInDialog";
+import SignUpDialog from "../auth/SignUpDialog";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import Categories from "./Categories";
@@ -15,6 +17,8 @@ export default function Home() {
       </div>
       <NewsLine />
       <Categories />
+      <SignUpDialog />
+      <SignInDialog />
       <Footer />
     </div>
   );

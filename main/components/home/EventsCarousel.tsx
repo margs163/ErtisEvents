@@ -16,7 +16,7 @@ export default function EventsCarousel() {
     <section className="px-4 lg:px-16 lg:py-4 bg-blue-500">
       <Carousel
         className="w-full"
-        opts={{ align: "start" }}
+        opts={{ align: "start", loop: true }}
         orientation="horizontal"
       >
         <CarouselContent className="w-full">
@@ -79,7 +79,7 @@ function EventItem({
             className="size-28 fill-blue-400 filter-[invert(1)_hue-rotate(360deg)_saturate(2)] shadow-lg drop-shadow-lg drop-shadow-gray-400"
           />
           <h2 className="text-base leading-none top-10 w-20 right-4 text-center font-extrabold text-white absolute">
-            NEW EVENT
+            НОВОЕ МЕСТО
           </h2>
         </div>
         <Image
@@ -90,9 +90,9 @@ function EventItem({
       </div>
       <Link
         href={"#"}
-        className="flex items-center gap-2 self-end text-sm font-medium px-4 py-2 rounded-full bg-gray-200 mt-auto hover:bg-gray-300 active:bg-gray-300 transition-colors"
+        className="flex items-center gap-2 self-end text-sm font-medium px-4 py-2 rounded-full bg-gray-200 mt-auto hover:bg-gray-300 active:bg-gray-300 transition-colors relative -right-2"
       >
-        BOOK NOW <MoveRight />
+        УЗНАТЬ БОЛЬШЕ <MoveRight />
       </Link>
     </div>
   );

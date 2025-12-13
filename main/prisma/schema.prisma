@@ -21,11 +21,14 @@ model User {
   image         String?
   age           Int
   gender        String
+  role          String    @default("viewer")
   interests     String[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
   sessions      Session[]
   accounts      Account[]
+  recommendations Recommendation[]
+  likedEvents    Event[]
 
   @@map("user")
 }
@@ -76,4 +79,48 @@ model Verification {
 
   @@index([identifier])
   @@map("verification")
+}
+
+model Event {
+  id               String    @id
+  title            String
+  category         String
+  tags             String[]
+  rating           Float
+  availableSeats   Int
+  shortDescription String
+  description      String
+  img              String
+  s3Url            String?
+  date             DateTime
+  recommendationEvents RecommendationEvent[]
+  likedBy                User[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("event")
+}
+
+model Recommendation {
+  id                   String    @id
+  userId               String
+  user                 User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  recommendationEvents RecommendationEvent[]
+  createdAt            DateTime  @default(now())
+
+  @@index([userId])
+  @@map("recommendation")
+}
+
+// Join table for many-to-many between Recommendation and Event
+model RecommendationEvent {
+  recommendationId String
+  eventId          String
+
+  recommendation Recommendation @relation(fields: [recommendationId], references: [id], onDelete: Cascade)
+  event          Event          @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@id([recommendationId, eventId])
+  @@map("recommendation_event")
 }

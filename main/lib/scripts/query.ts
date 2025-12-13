@@ -27,6 +27,8 @@ async function main() {
   //     },
   //   });
   //   console.log("All users:", JSON.stringify(allUsers, null, 2));
+
+  prisma.pub;
 }
 
 main()

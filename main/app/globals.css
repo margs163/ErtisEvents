@@ -126,6 +126,21 @@
   font-family: var(--font-geist);
 }
 
+.no-bar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox, Safari 18.2+, Chromium 121+ */
+}
+
+.bg-orn {
+  background-image: url("/pattern.png");
+  @apply bg-white/97.5;
+  background-size: contain;
+}
+
+.no-bar::-webkit-scrollbar {
+  display: none; /* Older Safari and Chromium */
+}
+
 .ticker-text {
   animation: scroll-left 20s linear infinite; /* 20s duration; adjust for speed */
 }

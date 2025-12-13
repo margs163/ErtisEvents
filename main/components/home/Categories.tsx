@@ -5,7 +5,7 @@ export default function Categories() {
   return (
     <section className="space-y-8 lg:space-y-24 bg-linear-to-b from-blue-500 from-0% to-50% to-blue-50 px-4 py-20 lg:px-32 lg:py-36">
       <h2 className="text-3xl lg:text-7xl text-center font-extrabold text-neutral-900">
-        EVENT CATEGORIES
+        ВИДЫ СОБЫТИЙ
       </h2>
       <div className="space-y-6 lg:space-y-12">
         {categories.map((item, index) =>
