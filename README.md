@@ -5,7 +5,7 @@
 
 ## Overview
 
-EventHub is a modern web application designed to connect users with exciting events in their city. It leverages AI-driven recommendations to suggest personalized events based on users' detailed interests, age, gender, and other characteristics. Users can browse, search, and receive tailored suggestions, while event organizers benefit from tools to create events, generate AI-powered posters, and promote their gatherings effectively.
+Ertis Events is a modern web application designed to connect users with exciting events in their city. It leverages AI-driven recommendations to suggest personalized events based on users' detailed interests, age, gender, and other characteristics. Users can browse, search, and receive tailored suggestions, while event organizers benefit from tools to create events, generate AI-powered posters, and promote their gatherings effectively.
 
 The platform includes an interactive AI assistant that users can chat with for real-time event recommendations. Built with a focus on scalability, user experience, and seamless integration of AI, EventHub aims to revolutionize how people discover and engage with local events.
 
