@@ -168,12 +168,8 @@ We welcome contributions! Please follow these steps:
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Open a Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
-For questions or feedback, reach out to [your-email@example.com] or open an issue on GitHub.
+For questions or feedback, reach out to [aldanovdaniyal@gmail.com] or open an issue on GitHub.
 
 Thank you for using EventHub! 🎉
