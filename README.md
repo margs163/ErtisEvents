@@ -3,6 +3,12 @@
 [![Next.js](https://img.shields.io/badge/Next.js-14.0+-black.svg)](https://nextjs.org/)
 [![Prisma](https://img.shields.io/badge/Prisma-ORM-blue.svg)](https://www.prisma.io/)
 
+<img width="1917" height="998" alt="screenshot-2025-12-19_17-40-22" src="https://github.com/user-attachments/assets/69214eab-d260-4522-a9aa-7521e4c98ccf" />
+<img width="1920" height="1080" alt="screenshot-2025-12-19_17-44-03" src="https://github.com/user-attachments/assets/e9ffea3a-4a2a-484a-ab78-e97e6e92afef" />
+<img width="1920" height="1080" alt="screenshot-2025-12-19_17-44-13" src="https://github.com/user-attachments/assets/aaa36065-5268-4c19-9248-86db359a7953" />
+<img width="1920" height="1080" alt="screenshot-2025-12-19_17-46-26" src="https://github.com/user-attachments/assets/a311fce4-0fa5-4921-bf15-ee490355ac4c" />
+
+
 ## Overview
 
 Ertis Events is a modern web application designed to connect users with exciting events in their city. It leverages AI-driven recommendations to suggest personalized events based on users' detailed interests, age, gender, and other characteristics. Users can browse, search, and receive tailored suggestions, while event organizers benefit from tools to create events, generate AI-powered posters, and promote their gatherings effectively.
