@@ -1,4 +1,4 @@
-# EventHub: Personalized Event Discovery and Management Platform - ERTIS EVENTS
+# ErtisEvents: Personalized Event Discovery and Management Platform
 
 [![Next.js](https://img.shields.io/badge/Next.js-14.0+-black.svg)](https://nextjs.org/)
 [![Prisma](https://img.shields.io/badge/Prisma-ORM-blue.svg)](https://www.prisma.io/)
@@ -172,4 +172,4 @@ We welcome contributions! Please follow these steps:
 
 For questions or feedback, reach out to [aldanovdaniyal@gmail.com] or open an issue on GitHub.
 
-Thank you for using EventHub! 🎉
+Thank you for using ErtisEvents! 🎉
