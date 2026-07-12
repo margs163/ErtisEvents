@@ -18,7 +18,7 @@ export default function Hero() {
               ВСЕ
             </h1>
             <h3 className="text-[0.80rem] lg:text-3xl lg:max-w-160 leading-[1.41] font-medium text-neutral-300">
-              Керемет Мейрамдар Бізде, Себебі Ерке Ертістің Жағасында
+              События, которые запоминаются. Эмоции, которые остаются.
             </h3>
           </div>
           <h1 className="text-[2.7rem] lg:text-[8rem] lg:text-9xl leading-[0.9] lg:leading-[1] font-extrabold text-blue-500 scale-x-109 lg:scale-x-112 pl-2 lg:pl-8">
