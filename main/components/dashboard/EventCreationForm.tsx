@@ -39,7 +39,7 @@ export default function EventCreationForm() {
   const generatedImage = useRef<HTMLImageElement>(null);
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -106,21 +106,22 @@ export default function EventCreationForm() {
     setFormData((prev) => ({ ...prev, imageFile: null, imagePreview: "" }));
   };
   const handleGenerateImage = async () => {
-    startTransition(async () => {
-      try {
-        const blob = await generateImage("A poster for a city event"); // Blob from HF
-        const file = new File([blob], "generated.png", { type: "image/png" });
-        const url = URL.createObjectURL(blob);
-        setFormData((prev) => ({
-          ...prev,
-          imageFile: file,
-          imagePreview: url,
-        }));
-      } catch (err) {
-        console.error(err);
-        toast.error("Failed to generate image");
-      }
-    });
+    return;
+    // startTransition(async () => {
+    //   try {
+    //     // const blob = await generateImage("A poster for a city event"); // Blob from HF
+    //     const file = new File([blob], "generated.png", { type: "image/png" });
+    //     const url = URL.createObjectURL(blob);
+    //     setFormData((prev) => ({
+    //       ...prev,
+    //       imageFile: file,
+    //       imagePreview: url,
+    //     }));
+    //   } catch (err) {
+    //     console.error(err);
+    //     toast.error("Failed to generate image");
+    //   }
+    // });
   };
 
   return (

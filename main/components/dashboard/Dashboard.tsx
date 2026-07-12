@@ -16,7 +16,7 @@ export default function Dashboard() {
   const setUserData = useUserStore((state) => state.setUserData);
   const { data: session, error, refetch } = authClient.useSession();
   const setRecommendedEvents = useEventsStore(
-    (state) => state.setRecommendations
+    (state) => state.setRecommendations,
   );
 
   const [isPending, startTransition] = useTransition();
@@ -35,6 +35,7 @@ export default function Dashboard() {
           toast.error("Could not make recommendations", {
             description: "Please Try Again later",
           });
+          console.log(data.error);
           return;
         }
 

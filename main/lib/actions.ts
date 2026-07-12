@@ -1,7 +1,7 @@
 "use server";
 
 import { GetObjectCommand, PutObjectCommand } from "@aws-sdk/client-s3";
-import prisma from "./prisma";
+import { prisma } from "./prisma";
 import { s3 } from "./amazon";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { EventType, UserType } from "./types";
@@ -43,11 +43,11 @@ export async function getMultipleImageUrls(keys: string[]) {
         });
         const url = await getSignedUrl(s3, command, { expiresIn: 7200 });
         return { key, url };
-      })
+      }),
     );
 
     const urlMap = Object.fromEntries(
-      urls.map((item, index) => [index, item.url])
+      urls.map((item, index) => [index, item.url]),
     );
     return { data: urlMap };
   } catch (error) {

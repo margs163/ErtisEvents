@@ -1,7 +1,7 @@
 import { ChatGroq } from "@langchain/groq";
 import { createAgent, tool } from "langchain";
 import * as z from "zod";
-import prisma from "./prisma";
+import { prisma } from "./prisma";
 
 const systemPrompt = `You are an AI event recommendation agent specialized in selecting the most suitable events for users based on their personal preferences. Your goal is to predict and recommend events that align closely with the user's age, gender, and interests, making personalized suggestions on what to visit or where to go.
 
@@ -13,7 +13,7 @@ You will receive user preferences in this structure:
 
 ### Process:
 1. **Retrieve Events**: Always start by calling your tool "get_all_events" to fetch a comprehensive list of available events. This tool will provide event details and relevant metadata.
-2. **Analyze and Predict Suitability**: 
+2. **Analyze and Predict Suitability**:
    - Use the user's age to filter or prioritize events appropriate for their life stage (e.g., family-friendly for older users, adventurous for younger ones).
    - Consider gender if relevant to event themes (e.g., wellness events that might appeal differently, but avoid stereotypes—focus on inclusivity).
    - Match interests directly to event categories or keywords (e.g., recommend concerts for "music" interest).
@@ -57,7 +57,7 @@ const getAllEvents = tool(
     schema: z.object({
       input: z.string(),
     }),
-  }
+  },
 );
 
 const agent = createAgent({
