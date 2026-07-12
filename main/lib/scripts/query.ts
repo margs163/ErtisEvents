@@ -2,7 +2,6 @@ import { prisma } from "@/lib/prisma";
 
 async function main() {
   await prisma.user.deleteMany({}); // Clears all records from the 'User' table
-  await prisma.post.deleteMany({});
   //   const user = await prisma.user.create({
   //     data: {
   //       name: "Alice",
@@ -27,8 +26,6 @@ async function main() {
   //     },
   //   });
   //   console.log("All users:", JSON.stringify(allUsers, null, 2));
-
-  prisma.pub;
 }
 
 main()

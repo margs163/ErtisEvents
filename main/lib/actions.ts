@@ -7,7 +7,7 @@ import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { EventType, UserType } from "./types";
 import { v4 as uuidv4 } from "uuid";
 import agent from "./recommendationAgent";
-import { clientHF } from "./imageGen";
+// import { clientHF } from "./imageGen";
 
 const bucket_name = process.env.S3_BUCKET_NAME!;
 
@@ -104,9 +104,9 @@ type InputDataType = {
   title: string;
   description: string;
   shortDescription: string;
-  date: string;
+  date: Date;
   category: string;
-  availableSeats: string;
+  availableSeats: number;
   tags: string[];
   imageFile: File | null;
   imagePreview: string;
@@ -121,11 +121,11 @@ export async function handleFormSubmission(data: InputDataType) {
         data: {
           id: uuidv4(),
           title: data.title,
-          date: new Date(data.date),
+          date: data.date,
           category: data.category,
           tags: data.tags,
           rating: 4.9,
-          availableSeats: parseInt(data.availableSeats),
+          availableSeats: Number(data.availableSeats),
           shortDescription: data.shortDescription,
           description: data.description,
           img: key,

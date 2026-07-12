@@ -310,7 +310,8 @@ export default function EventCreationForm() {
               </label>
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
                 {interestTags.map((tag) => {
-                  const IconComponent = interestTagIcons[tag];
+                  const IconComponent =
+                    interestTagIcons[tag as keyof typeof interestTagIcons];
                   return (
                     <button
                       key={tag}

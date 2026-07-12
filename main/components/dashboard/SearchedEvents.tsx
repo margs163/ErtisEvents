@@ -31,9 +31,11 @@ export default function SearchedEvents() {
 
   const filteredEvents = useMemo(() => {
     console.log("change");
-    if (!allEvents || allEvents.length < 1) {
-      return recommendations;
-    }
+    // if (!allEvents || allEvents.length < 1) {
+    //   return recommendations;
+    // }
+
+    // return allEvents;
     return allEvents.filter((event) => {
       // Search query filter
       if (
@@ -73,7 +75,7 @@ export default function SearchedEvents() {
       // Tag filter - event must have at least one selected tag
       if (filters.tags.length > 0) {
         const hasMatchingTag = event.tags.some((tag) =>
-          filters.tags.includes(tag)
+          filters.tags.includes(tag),
         );
         if (!hasMatchingTag) {
           return false;
@@ -165,7 +167,7 @@ function SearchedItem({ data }: { data: EventType }) {
             onClick={() => setLiked((prev) => !prev)}
             className={cn(
               "text-neutral-600 size-6 transition-colors cursor-pointer",
-              liked && "text-red-500 fill-red-500"
+              liked && "text-red-500 fill-red-500",
             )}
           />
         </div>
