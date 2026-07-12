@@ -1,6 +1,5 @@
 // app/api/generate/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { InferenceClient } from "@huggingface/inference";
 import dotenv from "dotenv";
 dotenv.config();
 
