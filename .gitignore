@@ -3,5 +3,4 @@
 .env.dev
 .lib
 node_modules
-prisma
 pnpm-workspace.yaml
