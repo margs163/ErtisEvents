@@ -1,9 +1,6 @@
 import { createAuthClient } from "better-auth/react";
 import { inferAdditionalFields } from "better-auth/client/plugins";
 import type { auth } from "./auth";
-import * as dotenv from "dotenv";
-
-dotenv.config();
 
 const baseUrl = process.env.BETTER_AUTH_URL;
 
