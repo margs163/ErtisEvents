@@ -26,8 +26,9 @@ const geistFont = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "OquHard | Learn Algorithms and Data Structures with OquHard",
-  description: "Algorithms and Data Structures explained and simplified",
+  title: "ErtisEvents | AI-powered event discovery platform",
+  description:
+    "  It connects users with local events through personalized AI recommendations and organizer tools.",
 };
 
 export default function RootLayout({
